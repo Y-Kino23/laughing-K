@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<title> canvas 雪だるま　</title>
+<style> canvas { border: 1px solid black; }</style>
+<script>
+function main() {
+        var canvas = document.getElementById( "myCanvas" );
+        var c = canvas.getContext( "2d" );
+        c.beginPath();
+
+        c.fillStyle = "red";
+        c.fillRect(175,15,150,100); //バケツ
+        
+        c.fillStyle = "white";
+        c.moveTo(350,220); //頭
+        c.arc (250,220,100,0,2*Math.PI,true);
+        c.fill();
+    
+        c.beginPath();
+        c.fillStyle ="black";
+        c.moveTo(300,170); //右目1
+        c.arc(290,170,10,0,2*Math.PI,true);
+        c.fill();
+
+        c.beginPath();
+        c.fillStyle ="white";
+        c.moveTo(293,170); //右目2
+        c.arc(290,170,3,0,2*Math.PI,true);
+        c.fill();
+            
+        c.beginPath();
+        c.fillStyle = "black";
+        c.moveTo(220,170); //左目1
+        c.arc(210,170,10,0,2*Math.PI,true);
+        c.fill();
+
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(213,170); //左目2
+        c.arc(210,170,3,0,2*Math.PI,true);
+        c.fill();
+
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(400,470); //体
+        c.arc (250,470,150,0,2*Math.PI,true);
+        c.fill();
+
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(65,210); //雪1
+        c.arc (50,210,15,0,2*Math.PI,true);
+        c.fill();
+        
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(45,310); //雪2
+        c.arc (30,310,15,0,2*Math.PI,true);
+        c.fill();
+        
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(450,210); //雪3
+        c.arc (435,210,15,0,2*Math.PI,true);
+        c.fill();
+        
+        c.beginPath();
+        c.fillStyle = "white";
+        c.moveTo(470,310); //雪4
+        c.arc (455,310,15,0,2*Math.PI,true);
+        c.fill();
+        
+        c.beginPath();
+        c.fillStyle = "yellow";
+　　　　c.moveTo(639,150); //月
+        c.arc(639,0,150,0,2*Math.PI,true);
+        c.fill();
+
+}
+</script>
+<body onload = "main()">
+<canvas id = "myCanvas" width = "640" height = "1280" style="background-color:black;">
+このブラウザは canvas 要素に対応していません。
+</canvas>
+    
