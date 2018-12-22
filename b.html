@@ -18,10 +18,7 @@ var y = 240;
 var vx = 0;
 var vy = 0;
 
-	ctx.beginPath();
-	ctx.moveTo(0,0);
-	ctx.lineTo(100,100);
-	ctx.stroke();
+	
 
 function loop(){
 	x += vx;
@@ -32,7 +29,11 @@ function loop(){
 	ctx.beginPath();
 	ctx.arc( x, y, 20, 0, 2 * Math.PI, true );
 	ctx.fill();
-
+    
+ ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(100,100);
+	ctx.stroke();
 
  //’µ‚Ë•Ô‚èˆ—
 
