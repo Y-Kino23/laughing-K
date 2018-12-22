@@ -39,7 +39,7 @@ function loop(){
 
 	if( x + vx < 0 || 960 < x + vx ){
 		vx = -vx;
-}else{if( x + vx > 360 || 360 > x + vx ){
+}else{if( x + vx > 360 || 360 < x + vx ){
             vx = -vx;}}
 	if( y + vy < 0 || 1280 < y + vy ){
 		vy = -vy;
