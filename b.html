@@ -43,10 +43,10 @@ function loop(){
 	if( y + vy < 0 || 1280 < y + vy ){
 		vy = -vy;
 }
-if( x + vx < 0 || 360 < x + vx ){
+if( x + vx > 360 || 365 > x + vx ){
 		vx = -vx;
 }
-	if( y + vy < 0 || 1000 < y + vy ){
+	if( y + vy > 0 || 1200 > y + vy ){
 		vy = -vy;
 }
 
