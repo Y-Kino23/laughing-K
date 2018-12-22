@@ -31,8 +31,8 @@ function loop(){
 	ctx.fill();
     
  ctx.beginPath();
-	ctx.moveTo(0,0);
-	ctx.lineTo(100,100);
+	ctx.moveTo(360,0);
+	ctx.lineTo(360,1200);
 	ctx.stroke();
 
  //’µ‚Ë•Ô‚èˆ—
@@ -41,6 +41,12 @@ function loop(){
 		vx = -vx;
 }
 	if( y + vy < 0 || 1280 < y + vy ){
+		vy = -vy;
+}
+if( x + vx < 0 || 360 < x + vx ){
+		vx = -vx;
+}
+	if( y + vy < 0 || 1200 < y + vy ){
 		vy = -vy;
 }
 
